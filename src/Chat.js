@@ -27,6 +27,7 @@ const Chat =({socket,username,room})=>{
             setMessageArr((e)=>[...e,data]);
         })
     },[socket]);
+    
     return(
         <div>
             <div className="chat-header">
