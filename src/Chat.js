@@ -5,7 +5,7 @@ const Chat =({socket,username,room})=>{
     const [messageArr,setMessageArr] = useState([]);
 
     const OnSendMessageHandler = async()=>{
-        if(inPutMessage==="") return;
+        if(inPutMessage.trim()==="") return;
         console.log(inPutMessage);
         //msgobject data
         const messageData = {
